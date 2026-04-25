@@ -36,6 +36,7 @@
       <a href="#database">Database</a>
       <a href="#hardware">Hardware</a>
       <a href="#flowchart">Flowchart</a>
+      <a href="#api">API</a>
     </div>
   </nav>
 
@@ -333,7 +334,32 @@
     </div>
   </section>
 
+  <!-- ══ API ══ -->
+  <section id="api">
+    <div class="section-tag" style="color:rgba(200,67,42,.9)">06 — ESP32 REST Interface</div>
+    <h2 class="section-title" style="color:var(--paper)">Firestore API</h2>
+    <div class="section-rule"></div>
+    <p class="section-lead" style="color:rgba(246,244,239,.42)">The ESP32 communicates directly with Firebase via the
+      Firestore REST API.</p>
+
+    <div id="esp32-requests" class="api-grid">
+      <!-- Dynamically rendered from requests.js -->
+    </div>
+
+    <div id="mobile-requests-section" style="margin-top: 64px; display: none;">
+      <div class="section-tag" style="color:var(--accent2)">07 — Mobile App Interface</div>
+      <h2 class="section-title" style="color:var(--paper)">Flutter API</h2>
+      <div class="section-rule" style="background:var(--accent2)"></div>
+      <p class="section-lead" style="color:rgba(246,244,239,.42)">The Flutter application uses the Firebase SDK and REST endpoints for management.</p>
+      
+      <div id="mobile-requests" class="api-grid" style="margin-top: 36px;">
+        <!-- Dynamically rendered from requests.js -->
+      </div>
+    </div>
+  </section>
+
   <script src="flowchart.js"></script>
+  <script src="requests.js"></script>
   <script src="script.js"></script>
 </body>
 
